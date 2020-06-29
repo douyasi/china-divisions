@@ -1,8 +1,7 @@
 中国（大陆）县级以上行政区划数据库
 -----
 
->   本项目由 [douyasi/identity-card](https://github.com/douyasi/identity-card) 析出，专注于数据爬虫与归档 —— 提供多种格式（如 `text/csv/js/sqlite/sql`）等数据源文件，以方便其它语言调用。
-
+>   本项目由 [douyasi/identity-card](https://github.com/douyasi/identity-card) 剥离析出，以减少该包的大小及其特定语言依赖，未来本仓库将专注于行政区划数据爬虫与归档 —— 提供多种格式（如 `text/csv/js/sqlite/sql`）等数据源文件，以方便其它语言调用。
 
 ### 基于本数据库实现的项目
 
