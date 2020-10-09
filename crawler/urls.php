@@ -1,8 +1,7 @@
 <?php
 
 return array(
-    '202002' => 'http://www.mca.gov.cn/article/sj/xzqh/2020/2020/202003301019.html',
-    '202001' => 'http://www.mca.gov.cn/article/sj/xzqh/2020/2020/202003061536.html',
+    '202008' => 'http://www.mca.gov.cn//article/sj/xzqh/2020/2020/2020092500801.html',
     '2019' => 'http://www.mca.gov.cn/article/sj/xzqh/1980/2019/202002281436.html',
     '2018' => 'http://www.mca.gov.cn/article/sj/xzqh/1980/201903/201903011447.html',
     '2017' => 'http://www.mca.gov.cn/article/sj/xzqh/1980/201803/201803131454.html',

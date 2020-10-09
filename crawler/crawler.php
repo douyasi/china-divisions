@@ -20,7 +20,7 @@ function analyze_data($url, $key, &$places)
     $res = preg_replace('/\n/', ' ', $res);
     $res = preg_replace('/(.*)110000(.*)/', '110000${2}', $res);
     $res = preg_replace('/(.*)注(.*)/', '${1}', $res);
-    $count = preg_match_all('/([\d]{6})\s+([\x{4e00}-\x{9fa5}]{3,})/imu', $res, $match, PREG_PATTERN_ORDER);
+    $count = preg_match_all('/([\d]{6})\s+([\x{4e00}-\x{9fa5}]{2,})/imu', $res, $match, PREG_PATTERN_ORDER);
     $file = __DIR__.'/data/'.$key.'.txt';
     if (file_exists($file)) {
         unlink($file);
