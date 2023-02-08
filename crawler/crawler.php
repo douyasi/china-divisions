@@ -10,6 +10,7 @@
 function analyze_data($url, $key, &$places)
 {
     $res = get_request($url);
+
     // 进行源码预处理工作
     $res = strip_tags($res);
     $res = str_replace(' ', '', $res);
@@ -21,6 +22,7 @@ function analyze_data($url, $key, &$places)
     $res = preg_replace('/(.*)110000(.*)/', '110000${2}', $res);
     $res = preg_replace('/(.*)注(.*)/', '${1}', $res);
     $count = preg_match_all('/([\d]{6})\s+([\x{4e00}-\x{9fa5}]{2,})/imu', $res, $match, PREG_PATTERN_ORDER);
+
     $file = __DIR__.'/data/'.$key.'.txt';
     if (file_exists($file)) {
         unlink($file);
@@ -60,6 +62,7 @@ function main() {
     // 行政区划新老历史沿革 数据 网址
     $urls = require __DIR__.'/urls.php';
     foreach ($urls as $key => $url) {
+        echo 'handle year: ' .$key. ' url: '. $url .PHP_EOL;
         analyze_data($url, $key, $places);
     }
     ksort($places);
