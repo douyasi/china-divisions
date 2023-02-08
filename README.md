@@ -6,7 +6,7 @@
 ### 基于本数据库实现的项目
 
 - 中国（大陆）身份证号码校验类库 [douyasi/identity-card](https://github.com/douyasi/identity-card) 及其衍生版本： [Node/Javascript 实现版本](https://github.com/ycrao/id.js) 、[Rust 实现版本](https://github.com/ycrao/idrs)
-- 省市县三级联动地址效果见此 [在线网页](https://raoyc.com/address-selector/) 。
+- 省市县三级联动地址效果见此 [在线网页](https://raoyc.com/address-selector/) ，地区相关的js数据在 [此](https://raoyc.com/address-selector/divisions.js) ，文件大小约 `99KB` 。
 
 
 ### 数据爬虫
